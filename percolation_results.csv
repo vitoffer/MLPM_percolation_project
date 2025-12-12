@@ -1,5 +1,0 @@
-removed_pct,lcc_pct,strategy
-0.0,1.0,Random
-1.0,0.5,Random
-0.0,1.0,Betweenness
-1.0,0.5,Betweenness
