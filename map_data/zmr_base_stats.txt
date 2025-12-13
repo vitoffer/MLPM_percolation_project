@@ -6,4 +6,4 @@
 	Travel_time среднее: 0.35 мин
 	Travel_time макс: 1.61 мин
 	Travel_time медиана: 0.27 мин
-	O-D пар: 5000
+	O-D пар: 1000
