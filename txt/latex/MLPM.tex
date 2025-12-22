@@ -37,13 +37,12 @@
 \bigskip
 
 
-\centerline{\bf © 2025 г. \ \ Е. С. Данович$^{1}$, \ \ В. А. Ивенин$^{1}$, \ \ О. О. Рыбалов$^{1}$, \ \ М. С. Титов$^{1}$}
+\centerline{\bf © 2025 г. \ \ Е. С. Данович$^{1}$, \ \ В. А. Ивенин$^{1,*}$, \ \ О. О. Рыбалов$^{1}$, \ \ М. С. Титов$^{1}$}
 
 
 \bigskip
 \centerline{$^{1}$ Центральный университет, 123056, г. Москва, ул. Гашека, д. 7, стр. 1}
-
-
+\centerline{$^{*}$\it email: iveninvala7@gmail.com} 
 
 \bigskip
 
@@ -173,7 +172,6 @@ Kepler.gl обеспечил возможность построения сло�
     \textbf{Граф} & \textbf{Узлов} & \textbf{Ребер} & \textbf{O-D пар} \\
     \hline
     moscow & 15629 & 32038 & 5000 \\
-    moscow-1000 & 15632 & 32044 & 1000 \\
     sao & 1550 & 3257 & 3000 \\
     zmr & 175 & 366 & 1000 \\
     \hline
@@ -182,17 +180,18 @@ Kepler.gl обеспечил возможность построения сло�
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width=0.85\textwidth]{./view/sao_plot.png}
+    \caption{Перколяционный анализ для САО с 3000 OD-пар: зависимость LCC и Efficiency от доли удаленных ребер}
+    \label{fig:sao}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
     \includegraphics[width=0.85\textwidth]{./view/zmr_plot.png}
     \caption{Перколяционный анализ для Замоскворечья с 1000 OD-пар: зависимость LCC и Efficiency от доли удаленных ребер}
     \label{fig:zmr}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\textwidth]{./view/sao_plot.png}
-    \caption{Перколяционный анализ для САО с 3000 OD-пар: зависимость LCC и Efficiency от доли удаленных ребер}
-    \label{fig:sao}
-\end{figure}
 
 \begin{figure}[H]
     \centering
@@ -222,24 +221,25 @@ Kepler.gl обеспечил возможность построения сло�
 
 \begin{figure}[H]
     \centering
-    \begin{minipage}[t]{0.32\textwidth}
+
+    \begin{minipage}{0.32\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{./view/moscow.png}
-        \caption{Граф moscow}
-        \label{fig:moscow_plot}
-    \end{minipage}\hfill
-    \begin{minipage}[t]{0.28\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{./view/sao.png}
+        \includegraphics[width=\textwidth]{./view/SAO_3x4.png}
         \caption{Граф sao}
         \label{fig:sao_plot}
     \end{minipage}\hfill
-    \begin{minipage}[t]{0.32\textwidth}
+    \begin{minipage}{0.32\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{./view/zmr.png}
+        \includegraphics[width=\textwidth]{./view/ZMR_3x4.png}
         \caption{Граф zmr}
         \label{fig:zmr_plot}
     \end{minipage}
+    \begin{minipage}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{./view/MOSCOW_3x4.png}
+        \caption{Граф moscow}
+        \label{fig:moscow_plot}
+    \end{minipage}\hfill
 \end{figure}
 
 \begin{multicols}{2}
@@ -291,5 +291,31 @@ Kepler.gl обеспечил возможность построения сло�
 Баламирзоев А. Г., Батманов Э. З., Султанахмедов М. А., Муртузов М. М., Игитов Ш. М. Управление транспортными потоками на основе перколяционной стохастической модели // Информационные технологии в науке и образовании: материалы Всероссийской научно‑практической конференции. Махачкала: Алеф, 2019. С. 13–16.
 
 \end{thebibliography}
+
+\newpage
+\pagestyle{empty}
+
+\section{Приложение}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{./view/SAO_3x4.png}
+    \caption{Граф sao}
+    \label{fig:p_sao_plot}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{./view/ZMR_3x4.png}
+    \caption{Граф zmr}
+    \label{fig:p_zmr_plot}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{./view/MOSCOW_3x4.png}
+    \caption{Граф moscow}
+    \label{fig:p_moscow_plot}
+\end{figure}
 
 \end{document}
